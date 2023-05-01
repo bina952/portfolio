@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4f9e611bd.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color:white;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="demo">
+        
+       <div class="col-1">
+        <img src="photo6.jpg">
+       </div>
+        
+    
+        <div class="col-2">
+            <div id="about">
+            <h1 class="subtitle">About me</h1>
+            <p>Hi I am Bina Pradhan. I am from Gaighat Udayapur. Currently,I am living in Koteshwor for my study. I am student of Kathford International College of Engineering and Management studying Bsc Csit in 7th semester.I am interested in Frontend Developer. I have done simple project ass website design by using HTML,CSS,JAVASCRIPT.I am eager to learn more so that I can build myself as a frontend developer and have strong desire and potential to work. I am ambitious person with peace loving environment. I love singing,riding and writing a poem.</p>
+
+            <div class="tabtitles">
+                <p class="tablinks active-links" onclick="opentab('key skills')">Key skills</p>
+                <p class="tablinks" onclick="opentab('education')">Education</p>
+                <p class="tablinks" onclick="opentab('achievements')">Achievements</p>
+                <p class="tablinks" onclick="opentab('hobbies')">Hobbies</p>
+                
+            </div>
+
+            <div class="tab-contents active-tab" id="key skills">
+                <ul>
+                    <li>Basic knowledge of Html,CSS,Javascript,React,Github.</li>
+                    <li>Good communication and presentation skills.</li>
+                    <li>Can work in a diverse team.</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2079 BS</span><br>Currently studying at Kathford International College of Engineering and Management.</li>
+                    <li><span>2074 BS</span><br>Senior Secondary level from Dharan Adarsha Higher Secondary Boarding School.</li>
+                    <li><span>2071 BS</span><br>SLC(School Leaving Certificate) from Udayapur Secondary English Boarding School.</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="achievements">
+                <ul>
+                    <li>Participated and won prize in Marathon.</li>
+                    <li>Participated in school programs sports competition and won prizes.</li>
+                   
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="hobbies">
+                <ul>
+                    <li>Singing</li>
+                    <li>Riding</li>
+                    <li>Writing</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+      </div>
+    
+      <!-- contact..... -->
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>binapradhan67@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>9819925871</p>
+                   
+                    <div class="social-icon">
+                     
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                        
+                        <i class="fa-brands fa-square-instagram"></i>
+                  
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+      </div>
+   
+    <script>
+        var tablinks=document.getElementsByClassName("tablinks");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>  
+</body>
+</html>
